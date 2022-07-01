@@ -1,6 +1,6 @@
 package com.boot;
 
-import com.boot.bean.Grade;
+import com.boot.pojo.Grade;
 import com.boot.mapper.GradeMapper;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

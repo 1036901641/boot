@@ -1,4 +1,4 @@
-package com.boot.bean;
+package com.boot.pojo;
 
 import com.baomidou.mybatisplus.annotation.IdType;
 import com.baomidou.mybatisplus.annotation.TableId;
