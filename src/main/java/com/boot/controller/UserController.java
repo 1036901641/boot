@@ -7,6 +7,9 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
+/**
+ * @author lenovo
+ */
 @RestController
 public class UserController {
 
@@ -20,7 +23,9 @@ public class UserController {
 
     @GetMapping("/getUserById/{id}")
     public User getUserById(@PathVariable("id") int id){
-        return userMapper.getUserById(id);
+        User targetUser = userMapper.getUserById(id);
+        System.out.println(targetUser);
+        return targetUser;
     }
 
     @RequestMapping("/insertUser")

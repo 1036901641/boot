@@ -6,13 +6,17 @@ import lombok.NoArgsConstructor;
 
 import javax.validation.constraints.NotNull;
 
+/**
+ * @author lenovo
+ */
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
 public class User {
-    @NotNull(message = "id 不能为空")
+
     private Integer id;
 
+    @NotNull(message = "name 不能为空")
     private String name;
     private String pwd;
 }
