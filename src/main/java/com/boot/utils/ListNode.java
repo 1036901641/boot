@@ -32,10 +32,10 @@ public class ListNode {
     /**
      * @describe :
      * @author 王继创
-     * @date 15:12 2022/7/18 
-     * @param head
-     * @param x 
-     * @return com.boot.utils.ListNode
+     * @date 15:12 2022/7/19
+ * @param head
+ * @param x
+ * @return com.boot.utils.ListNode
      **/
     public ListNode partition(ListNode head, int x) {
         ListNode dummy1 = new ListNode(-1);
