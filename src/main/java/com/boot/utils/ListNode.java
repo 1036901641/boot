@@ -2,10 +2,14 @@ package com.boot.utils;
 
 import java.util.Comparator;
 import java.util.PriorityQueue;
+import java.util.concurrent.ArrayBlockingQueue;
+import java.util.concurrent.CopyOnWriteArrayList;
+import java.util.concurrent.ThreadPoolExecutor;
+import java.util.concurrent.TimeUnit;
 
 /**
  * @author ：王继创
- * @description : TODO
+ * @description : 链表训练
  * @date : 2022/7/18 11:01
  * @version : 1.0
  */
@@ -33,8 +37,8 @@ public class ListNode {
      * @describe :
      * @author 王继创
      * @date 15:12 2022/7/19
- * @param head
- * @param x
+ * @param head 头结点
+ * @param x 目标值
  * @return com.boot.utils.ListNode
      **/
     public ListNode partition(ListNode head, int x) {
@@ -84,14 +88,7 @@ public class ListNode {
     }
 
     public static void main(String[] args) {
-        int[] nums = {1,3,5,4,2,3,6};
-        ListNode head = new ListNode(1);
-        ListNode p = head;
-        for(int i : nums){
-            p.next = new ListNode(i);
-            p = p.next;
-        }
-        head.partition(head,4);
-        head.print();
+
+
     }
 }

@@ -23,4 +23,5 @@ public class Grade {
     private Integer age;
 
     private Integer gender;
+
 }

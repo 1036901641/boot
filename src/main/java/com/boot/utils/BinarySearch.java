@@ -1,9 +1,8 @@
 package com.boot.utils;
 
-import java.util.HashMap;
-import java.util.Hashtable;
-import java.util.Iterator;
-import java.util.Map;
+import java.time.LocalDate;
+import java.time.LocalTime;
+import java.util.*;
 
 /**
  * @author ：王继创
@@ -13,26 +12,11 @@ import java.util.Map;
  */
 public class BinarySearch {
     public static void main(String[] args) {
-        HashMap<Integer, String> map = new HashMap(10);
-        map.put(1, "Java");
-        map.put(2, "JDK");
-        map.put(3, "Spring Framework");
-        map.put(5, "Java中文社群");
-        map.put(4, "MyBatis framework");
-        for (Map.Entry<Integer, String> entry : map.entrySet()) {
-            System.out.println(entry.getKey());
-            System.out.println(entry.getValue());
-        }
-        for (Integer key : map.keySet()) {
-            System.out.println(key);
-            System.out.println(map.get(key));
-        }
-        map.forEach((ke1y, value) -> {
-            System.out.println(ke1y);
-            System.out.println(value);
-        });
+        int[] nums = new int[] {1, 3, 9, 11};
+        System.out.println(serach(nums, 9));
     }
     public static int serach(int[] nums, int target){
+
         int start = 0, end = nums.length - 1;
         while(start <= end) {
             int mid = start + (end - start) / 2;
@@ -60,5 +44,6 @@ public class BinarySearch {
         }
         return null;
     }
+
     
 }
